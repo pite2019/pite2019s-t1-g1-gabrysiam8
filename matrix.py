@@ -29,7 +29,7 @@ class Matrix:
 			for i in range(2):
 				new_mat.append([])
 				for j in range(2):
-					new_mat[i].append(sum([self._rows[i][k]*other._rows[k][i] for k in range(2)]))
+					new_mat[i].append(sum([self._rows[i][k]*other._rows[k][j] for k in range(2)]))
 			return new_mat
 		return None
 
